@@ -35,7 +35,7 @@
 
 <script>
 import TodoListItem from './TodoListItem';
-import {mapState, mapActions} from 'vuex';
+import { mapActions, mapGetters} from 'vuex';
 
 export default {
     name: 'todo-list-table',
@@ -48,7 +48,9 @@ export default {
         }
     },
     computed:{
-        ...mapState(['listTask'])
+        ...mapGetters({
+            listTask : 'listTashSearch'
+        })
     },
     methods: {
         ...mapActions(['changeTasks']),

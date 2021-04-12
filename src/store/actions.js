@@ -9,7 +9,7 @@ export default {
     cancelForm({commit}){
         commit('CANCEL_FORM');
     },
-    handleSearch({commit}, strSearch){
+    handleSearchAction({commit}, strSearch){
         commit('HANDLESEARCH', strSearch)
     }
 }

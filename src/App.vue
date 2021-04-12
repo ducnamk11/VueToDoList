@@ -78,13 +78,6 @@ export default {
 			var newItems = this.listTask.filter(item => {
 				return item.name.toLowerCase().includes(strSearch.toLowerCase());
 			});
-			// this.listTask.forEach(function(item, index) {
-			// 	let lowerName = item.name.toLowerCase();
-			// 	let lowerSubString = strSearch.toLowerCase();
-			// 	if(lowerName.includes(lowerSubString)) 
-			// 		newItems.push(item);
-				
-			// });
 			return newItems;
 		},
 		listTaskSort() {
